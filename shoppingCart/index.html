@@ -18,21 +18,21 @@
             <h3>Product 1</h3>
             <p>Product description <span>excerpt</span></p>
             <p class="price">$5.05</p>
-            <button class="product-button" id="addToCart"> Add To Cart </button>
+            <button class="product-button" onclick="addToCart()"> Add To Cart </button>
         </div>
 <!-- Product 2 -->
         <div class="product-2">
             <h3>Product 2</h3>
             <p>Product description <span>excerpt</span></p>
             <p class="price">$49.99</p>
-            <button class="product-button" id="addToCart">Add To Cart </button>
+            <button class="product-button" onclick="addToCart()">Add To Cart </button>
         </div>
 <!-- Product 3 -->
         <div class="product-3">
             <h3>Product 3</h3>
             <p>Product description <span>excerpt</span></p>
             <p class="price">$99.99</p>
-            <button class="product-button" id="addToCart">Add To Cart </button>
+            <button class="product-button" onclick="addToCart()">Add To Cart </button>
         </div>
 
     </div>
@@ -51,7 +51,7 @@
             <div class="items">
                 <p>Items</p>
                 <hr>
-                <p>x 0</p>
+                <p id="cart-counter">x 0</p>
                 <hr>
             </div>
             <div class="total">
@@ -63,11 +63,9 @@
         </div>
 
 <!-- !!! buttons for clean and checkout cart-->
-        <button class="main-btns">Empty Cart</button>
+        <button class="main-btns" onclick="emptyCart()">Empty Cart</button>
         <button class="main-btns">Checkout</button>
     </div>
 </div>
-
-    <script src="app.js"></script>
 </body>
 </html>
